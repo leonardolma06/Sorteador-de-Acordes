@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+p{
+  font-size: 80%;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #12113A;
+  margin: 0;
+  padding: 0 16px;
+}
+
+h1, h2, p {
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Grid de alternativas */
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+@media (min-width: 600px) {
+  .box {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+button {
+  padding: 0.8em 1em;
+  font-weight: 900;
+  font-size: 1rem;
+  border-radius: 1rem;
+  border: 3px solid #6C63D8;
+  background-color: #DDE0FA;
+  color: #6C63D8;
+  cursor: pointer;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #7B6FFF;
+  box-shadow: #6C63D8 0px 0px 10px;
+}
+
+#proxima-questao {
+  background-color: #6483ff;
+  grid-column: 1 / -1;
+  width: 80%;
+  justify-self: center;
+}
+
+#proxima-questao:hover {
+  background-color: #869eff;
+}
+
+/* Botões de ação */
+.botoesDeAção {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.botoesDeAção button {
+  padding: 0.8em 1em;
+  font-weight: 800;
+  font-size: 0.95rem;
+  border-radius: 1rem;
+  background-color: #534AB7;
+  color: #DDE0FA;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.botoesDeAção button:hover {
+  background-color: #7B6FFF;
+  box-shadow: #6483ff 0px 0px 10px;
+}
+
+/* Estados de resposta */
+.certo {
+  background-color: #9ae3bd;
+  color: #039047;
+  border: 3px solid #039047;
+}
+
+.certo:hover {
+  background-color: #9ae3bd;
+  box-shadow: #039047 0px 0px 10px;
+}
+
+.errado {
+  background-color: #e39a9a;
+  color: #900303;
+  border: 3px solid #900303;
+}
+
+.errado:hover {
+  background-color: #e39a9a;
+  box-shadow: #900303 0px 0px 10px;
+}
+
+/* Donut de progresso */
+.donut-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+}
+
+#pct {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+
+#jogadas {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  #pct { font-size: 24px; }
+  #jogadas { font-size: 18px; }
+  .donut-container {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    right: 5%;
+    top: 20%;
+    margin: 0;
+  }}

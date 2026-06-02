@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorteio de Acordes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+    <br>
+    <br>
+    <h1>Sorteio de Acorde</h1>
+      <p > Versão 1.3</p>
+      <h2 id="h2" hidden></h2>
+      <p id="p" hidden></p>
+    <div class="box">
+      <button id="option0">Opção 0</button>
+      <button id="option1">Opção 1</button>
+      <button id="option2">Opção 2</button>
+      <button id="option3">Opção 3</button>
+      <button id="option4">Opção 4</button>
+      <button id="option5">Opção 5</button>
+      <button id="option6">Opção 6</button>
+      <button id="option7">Opção 7</button>
+      <button id="option8">Opção 8</button>
+      <button id="option9">Opção 9</button>
+      <button id="option10">Opção 10</button>
+      <button id="option11">Opção 11</button>
+      <br>
+    </div>
+    <div class ="botoesDeAção">
+      <button id="proxima-questao" hidden >Próximo Acorde</button>
+    </div>
+    <br>
+    <div class="botoesDeAção">
+      <button id = "PlayStop">Play</button>
+      <button id = "dica" onclick="Dica()">Mostrar/Esconder dica</button>
+      <button id = "showchord" onclick ="showChord()"> Mostrar/Esconder Acorde</button>
+    </div>
+    <p id="status">Bora começar?</p>
+    <br>
+    <div class="donut-container">
+      <canvas id="meuDonut"></canvas>
+      <div id="pct">0%</div>
+      <div id="jogadas">0 partidas</div>
+    </div>
+  </div>
+  
+  <h1>By Leo Almeida</h1>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
